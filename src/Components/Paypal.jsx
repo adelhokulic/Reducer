@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Card } from "react-bootstrap";
-import { CurrencyContext, AmountContext } from "../App";
+import { CurrencyContext, AmountContext } from "../contexts";
 import { CURRENCIES } from "../Currencies";
 
 const Paypal = () => {

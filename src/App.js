@@ -1,10 +1,10 @@
 import Payment from "./Components/Payment";
-import { createContext, useState, useReducer, useEffect } from "react";
+import { useState, useReducer, useEffect } from "react";
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import { CURRENCIES } from "../src/Currencies";
 import { userReducer, loadUserState } from "./Reducers/User";
-export const CurrencyContext = createContext("USD");
-export const AmountContext = createContext(0);
+import { CurrencyContext, AmountContext } from "./contexts";
+
 
 function App() {
 	const [userState, dispatch] = useReducer(userReducer, loadUserState());

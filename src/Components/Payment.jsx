@@ -1,13 +1,7 @@
 import Paypal from "./Paypal";
 
 const Payment = () => {
-	return (
-		<>
-			<div>
-				<Paypal />
-			</div>
-		</>
-	);
+	return <Paypal />;
 };
 
 export default Payment;
